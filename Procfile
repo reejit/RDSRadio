@@ -1,1 +1,1 @@
-web: php rdsradio.php
+web: php radio.php
