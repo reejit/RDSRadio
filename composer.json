@@ -1,0 +1,27 @@
+{
+    "name": "danog/magnaluna",
+    "description": "Telegram webradio based on MadelineProto and libtgvoip",
+    "authors": [{
+        "name": "Daniil Gentili",
+        "email": "daniil@daniil.it"
+    }],
+    "type": "project",
+    "support": {
+        "issues": "https://github.com/danog/magnaluna/issues"
+    },
+    "require": {
+        "danog/madelineproto": "dev-master"
+    },
+    "license": "AGPL-3.0-only",
+    "require-dev": {
+        "amphp/php-cs-fixer-config": "dev-master"
+    },
+    "scripts": {
+        "check": [
+            "@cs",
+            "@test"
+        ],
+        "cs": "PHP_CS_FIXER_IGNORE_ENV=1 php-cs-fixer fix -v --diff --dry-run",
+        "cs-fix": "PHP_CS_FIXER_IGNORE_ENV=1 php-cs-fixer fix -v --diff"
+    }
+}
